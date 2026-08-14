@@ -1,0 +1,167 @@
+<!--
+  ANTORA INTERNATIONAL POLICY INTELLIGENCE — EMAIL TEMPLATE
+  ==========================================================
+  Instructions for Claude:
+  - Replace {{DATE}} with today's date (e.g. "July 14, 2026")
+  - Replace {{NOTION_URL}} with the Notion report page URL from Step 6
+  - Order policy cards: High priority first, Medium second, Low last
+  - For each tracked policy, copy the POLICY CARD block and fill in content
+  - For Section 2 (European news), copy the EU NEWS ITEM block
+  - For Section 3 (Australia news), copy the AUSTRALIA NEWS ITEM block
+  - Delete all instruction comments before saving the draft
+  - Left border color by priority:
+      High   → border-left: 5px solid #ef4444
+      Medium → border-left: 5px solid #f59e0b
+      Low    → border-left: 5px solid #e2e8f0
+  - Priority emoji: 🔴 High  🟡 Medium  ⚪ Low
+  - Country emoji: 🇪🇸 Spain  🇩🇪 Germany  🇬🇧 UK  🇪🇺 EU  🇦🇺 Australia
+  - For policies with no relevant news: use the NO-NEWS CARD variant
+  - At a glance: use country/region flags, not 🌍
+      European news items → 🇪🇺
+      Australian news items → 🇦🇺
+-->
+
+<div style="background:#f0f3f8;padding:20px 12px;font-family:Arial,Helvetica,sans-serif">
+<div style="max-width:760px;margin:0 auto">
+
+  <!-- TOP BRAND STRIP -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="border-radius:8px 8px 0 0;overflow:hidden">
+    <tr><td bgcolor="#0a1628" style="background-color:#0a1628;padding:10px 36px">
+      <span style="font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#64748b">Antora Energy - International</span>
+    </td></tr>
+  </table>
+
+  <!-- TITLE AREA -->
+  <div style="background:#ffffff;padding:28px 36px 22px;border-bottom:3px solid #0a1628">
+    <div style="font-size:30px;font-weight:700;color:#0a1628;letter-spacing:-0.5px;line-height:1.2;margin-bottom:8px">International Policy Intelligence Newsletter</div>
+    <div style="font-size:15px;color:#64748b;margin-bottom:18px">{{DATE}}</div>
+    <div style="font-size:13px;color:#374151">
+      Policy Priority for Antora: &nbsp;
+      <span style="color:#ef4444;font-size:16px">●</span>&nbsp;<span style="color:#374151">High</span>&nbsp;&nbsp;&nbsp;
+      <span style="color:#f59e0b;font-size:16px">●</span>&nbsp;<span style="color:#374151">Medium</span>&nbsp;&nbsp;&nbsp;
+      <span style="color:#94a3b8;font-size:16px">●</span>&nbsp;<span style="color:#374151">Low</span>
+    </div>
+  </div>
+
+  <!-- AT A GLANCE -->
+  <div style="background:#ffffff;padding:20px 36px;border-bottom:3px solid #e2e8f0">
+    <div style="font-size:13px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px">At a glance</div>
+    <!-- Tracked policies: one line each, High → Medium → Low -->
+    <!-- country emoji + bold linked policy name + one sentence -->
+    <!-- Link each policy name to its primary source URL from Step 3 -->
+    <!-- European news items: 🇪🇺 + bold linked headline + one sentence -->
+    <!-- Australian news items: 🇦🇺 + bold linked headline + one sentence -->
+    <!-- Link each news headline to its source URL -->
+    <!-- Divider between policy lines and news lines -->
+    <div style="font-size:14px;color:#374151;line-height:2">
+      [country emoji] <a href="[PRIMARY_SOURCE_URL]" style="font-weight:700;color:#0a1628;text-decoration:none">[Policy Clean Name]</a> — [One-sentence summary of what happened or current status]<br>
+      [country emoji] <a href="[PRIMARY_SOURCE_URL]" style="font-weight:700;color:#0a1628;text-decoration:none">[Policy Clean Name]</a> — [One-sentence summary]<br>
+      <span style="display:block;border-top:1px solid #e2e8f0;margin:8px 0"></span>
+      🇪🇺 <a href="[SOURCE_URL]" style="font-weight:700;color:#0a1628;text-decoration:none">[European news headline short form]</a> — [One-sentence summary]<br>
+      🇪🇺 <a href="[SOURCE_URL]" style="font-weight:700;color:#0a1628;text-decoration:none">[European news headline short form]</a> — [One-sentence summary]<br>
+      🇦🇺 <a href="[SOURCE_URL]" style="font-weight:700;color:#0a1628;text-decoration:none">[Australia news headline short form]</a> — [One-sentence summary]<br>
+    </div>
+  </div>
+
+  <!-- SECTION 1 HEADER -->
+  <div style="background:#f1f5f9;padding:16px 36px;border-bottom:1px solid #e2e8f0">
+    <span style="font-size:20px;font-weight:700;color:#0a1628">📋 Tracked Policy Updates</span>
+  </div>
+
+  <!-- ============================================================
+       POLICY CARD (with news) — copy once per policy with updates
+       ============================================================ -->
+  <div style="background:#ffffff;border-left:5px solid #ef4444;padding:24px 36px;border-bottom:1px solid #eef0f3">
+
+    <div style="font-size:18px;font-weight:700;color:#0a1628;margin-bottom:6px">
+      🇪🇸 [Policy Clean Name] 🔴
+    </div>
+
+    <!-- Headline: black, not italic -->
+    <div style="font-size:14px;font-weight:500;color:#0a1628;margin-bottom:20px">
+      [Headline: what changed — one sentence, plain black text]
+    </div>
+
+    <!-- SOURCE + FINDINGS — repeat for each source -->
+    <div style="margin-bottom:14px">
+      <a href="[SOURCE URL]" style="font-size:13px;font-weight:700;color:#1d4ed8;text-decoration:none">[Source Name · Date]</a>
+      <ul style="margin:6px 0 0;padding-left:20px;font-size:13px;color:#94a3b8;line-height:1.7;font-style:italic">
+        <li>[Key finding — smaller, gray, italic]</li>
+        <li>[Second finding if applicable]</li>
+      </ul>
+    </div>
+
+    <!-- THINGS TO WATCH: gray, single paragraph -->
+    <div style="background:#f8fafc;border-left:3px solid #cbd5e1;border-radius:0 6px 6px 0;padding:12px 16px;margin-top:16px">
+      <div style="font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Things to watch</div>
+      <p style="margin:0;font-size:13px;color:#64748b;line-height:1.7">
+        [Single paragraph, 2–3 sentences max. Most critical timing and specific mechanism or clause at stake. No bullet points.]
+      </p>
+    </div>
+
+  </div>
+  <!-- ============================================================
+       NO-NEWS CARD — for policies with no relevant updates:
+       <div style="background:#ffffff;border-left:5px solid #e2e8f0;padding:20px 36px;border-bottom:1px solid #eef0f3">
+         <div style="font-size:18px;font-weight:700;color:#0a1628;margin-bottom:6px">🇩🇪 [Policy Name] ⚪</div>
+         <div style="font-size:14px;color:#94a3b8;font-style:italic">[One sentence: what is being waited for, or "No relevant developments this cycle."]</div>
+       </div>
+       ============================================================ -->
+
+  <!-- SECTION 2 HEADER — EUROPEAN -->
+  <div style="background:#f1f5f9;padding:16px 36px;margin-top:10px;border-bottom:1px solid #e2e8f0">
+    <div style="font-size:20px;font-weight:700;color:#0a1628">🇪🇺 European Policy News to Watch</div>
+  </div>
+
+  <!-- ============================================================
+       EU NEWS ITEM — copy once per European news item
+       ============================================================ -->
+  <div style="background:#ffffff;padding:22px 36px;border-bottom:1px solid #eef0f3">
+    <div style="font-size:16px;font-weight:700;color:#0a1628;line-height:1.4;margin-bottom:8px">
+      [News headline — what happened]
+    </div>
+    <div style="margin-bottom:12px">
+      <a href="[SOURCE URL]" style="font-size:13px;font-weight:700;color:#1d4ed8;text-decoration:none">[Source Name · Date]</a>
+      <span style="font-size:13px;color:#64748b;margin-left:8px">[Country / EU]</span>
+    </div>
+    <div style="font-size:15px;color:#374151;line-height:1.8">
+      [2–3 sentence summary. State the factual connection to Antora's markets, mechanisms, or technology where relevant.]
+    </div>
+  </div>
+  <!-- END EU NEWS ITEM -->
+
+  <!-- SECTION 3 HEADER — AUSTRALIA -->
+  <div style="background:#f1f5f9;padding:16px 36px;margin-top:10px;border-bottom:1px solid #e2e8f0">
+    <div style="font-size:20px;font-weight:700;color:#0a1628">🇦🇺 Australia Policy News to Watch</div>
+  </div>
+
+  <!-- ============================================================
+       AUSTRALIA NEWS ITEM — copy once per Australian news item
+       If no relevant Australian news this cycle, use this instead:
+       <div style="background:#ffffff;padding:20px 36px;border-bottom:1px solid #eef0f3">
+         <div style="font-size:14px;color:#94a3b8;font-style:italic">No relevant developments in Australia this cycle.</div>
+       </div>
+       ============================================================ -->
+  <div style="background:#ffffff;padding:22px 36px;border-bottom:1px solid #eef0f3">
+    <div style="font-size:16px;font-weight:700;color:#0a1628;line-height:1.4;margin-bottom:8px">
+      [News headline — what happened]
+    </div>
+    <div style="margin-bottom:12px">
+      <a href="[SOURCE URL]" style="font-size:13px;font-weight:700;color:#1d4ed8;text-decoration:none">[Source Name · Date]</a>
+      <span style="font-size:13px;color:#64748b;margin-left:8px">Australia</span>
+    </div>
+    <div style="font-size:15px;color:#374151;line-height:1.8">
+      [2–3 sentence summary. State the factual connection to Antora's Australian pipeline or target sectors.]
+    </div>
+  </div>
+  <!-- END AUSTRALIA NEWS ITEM -->
+
+  <!-- FOOTER -->
+  <div style="background:#f1f5f9;padding:16px 36px;border-radius:0 0 8px 8px;border-top:3px solid #0a1628;text-align:center">
+    <span style="font-size:12px;color:#64748b">Antora Energy · International Policy Intelligence Newsletter · Bi-Weekly</span>
+    <span style="color:#cbd5e1;margin:0 10px">·</span>
+    <a href="{{NOTION_URL}}" style="font-size:12px;color:#1d4ed8;text-decoration:none">View full report in Notion →</a>
+  </div>
+
+</div>
+</div>
